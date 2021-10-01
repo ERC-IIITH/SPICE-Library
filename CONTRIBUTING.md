@@ -43,8 +43,8 @@ git push origin <branch_name>
 ```
 7. Create a PR by going to the repo's page and clicking the "New pull request" button. Please make sure your PR title and description are descriptive and self explanatory.
 
-## Structure
-Please try to define your netlists in the form on subcircuits with `.subckt` with design parameters (sizing) as parameters so that other users can use them directly in other projects.
+## File and Netlist Structure
+Add the netlists in folders named after the netlist. Please try to define your netlists in the form on subcircuits with `.subckt` with design parameters (sizing) as parameters so that other users can use them directly in other projects.
 
 # PR guidelines
 1. Codes must be general purpose and re-usable (We do not want codes specific to your assignment xD).
