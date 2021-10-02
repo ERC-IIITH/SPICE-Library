@@ -1,0 +1,14 @@
+***Transmission Gate***
+**control = 0 there will be no data transmission 
+**control = 1 there will be data transmission (bidirectional (A -> B or B -> A))
+** control_bar is complement of control signal 
+
+.subckt transmission_gate B A control control_bar
+Mn1 B control A gnd CMOSN W={width_N}   L={2*LAMBDA}
++ AS={5*width_N*LAMBDA} PS={10*LAMBDA+2*width_N} 
++ AD={5*width_N*LAMBDA} PD={10*LAMBDA+2*width_N}
+
+Mp1 B control_bar A vdd CMOSP  W={width_P}   L={2*LAMBDA}
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P} 
++ AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+.ends transmission_gate
